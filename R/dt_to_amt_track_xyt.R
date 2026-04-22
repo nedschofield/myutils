@@ -18,7 +18,14 @@
 #' @param time character denoting posixct time column
 #' @param id character denoting ID column
 #' @param crs_in crs code. accept 3577, "EPSG:3577", proj string, or WKT
+#'
 #' @returns a list of track.xyt objects
+#'
+#' @examples
+#' \dontrun{
+#' x <- lapply(gps, dt_to_amt_track, crs_out = tiwi.crs)
+#' x.cov <- amt::extract_covariates(x, fire)
+#' }
 
 dt_to_amt_track <- function(dt,
                             crs_out,

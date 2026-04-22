@@ -36,9 +36,16 @@ a list of track.xyt objects
 author: Ned Ryan-Schofield
 date: 19/02/2026
 Helper function for converting a list of data.table objects to amt_xyt data structure for step selection make sure that you specify the crs as the same as the covariate raster stack
+
 example usage:
 
 x <- lapply(gps, dt_to_amt_track, crs_out = tiwi.crs)
 
 x.cov <- amt::extract_covariates(x, fire)
+}
+\examples{
+\dontrun{
+x <- lapply(gps, dt_to_amt_track, crs_out = tiwi.crs)
+x.cov <- amt::extract_covariates(x, fire)
+}
 }
