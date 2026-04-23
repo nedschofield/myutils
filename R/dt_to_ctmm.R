@@ -11,7 +11,7 @@
 #' @param y numerical variable - data.table coordinate latitude column
 #' @param ID character variable - data.table animal ID column
 #' @returns a ctmm telemetry object
-
+#' @export
 dt_to_ctmm <- function(dt, crs, x = "long", y = "lat", ID = "ID") {
 
   ### checks ###

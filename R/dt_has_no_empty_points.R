@@ -11,7 +11,7 @@
 #' @param x_col name of the x coordinate vector, should be numeric. Default is "long"
 #' @param y_col name of the y coordinate vector, should be numeric. Default is "lat"
 #' @returns outputs a TRUE/FALSE value in the console, for every element of dt. if FALSE, gives the index for the first NA
-
+#' @export
 dt_has_no_empty_points <- function(dt, x_col = "long", y_col = "lat") {
 
   x <- dt[[x_col]]

@@ -12,7 +12,7 @@
 #' @param utc.offset numeric variable - difference between UTC and local time in hours. Default is for darwin time.
 #' @param skip number of lines from top of sheet to skip. Default is 5
 #' @returns a list of data.table objects, where each element of the list is a set of GPS data.
-
+#' @export
 spot_multi_to_dt <- function(paths,
                              names = NULL,
                              tz = "Australia/Darwin",

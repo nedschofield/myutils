@@ -10,7 +10,7 @@
 #' @param time_col name of the timestamp vector, of class POSIXct. Default is "timestamp"
 #' @param na_ok an NA check. If true, NA's accepted.
 #' @returns outputs a TRUE/FALSE value in the console, for every element of dt. If ordered = FALSE, then an index of where the ordering is bad is output. Also outputs TRUE or FALSE for any duplicates, and if FALSE, the first ones position.
-
+#' @export
 dt_is_time_ordered_no_duplicates <- function(dt, time_col = "timestamp", na_ok = FALSE) {
 
   x <- dt[[time_col]]

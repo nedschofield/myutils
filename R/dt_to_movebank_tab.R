@@ -14,7 +14,7 @@
 #' @param ID character variable - data.table animal ID column
 #' @param tz_in character vector of timezone that timestamp (which is a POSIXct) is in. Default is "Australia/Darwin"
 #' @returns writes a textfile to disc. Timestamp is in UTC +0
-
+#' @export
 dt_to_movebank_tab <- function(dt, out.path,
                                t = "timestamp",
                                y = "lat",
