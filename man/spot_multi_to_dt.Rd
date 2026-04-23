@@ -13,9 +13,9 @@ spot_multi_to_dt(
 )
 }
 \arguments{
-\item{paths}{vector of file paths to raw downloaded .xlsx files}
+\item{paths}{vector of file paths to raw downloaded .xlsx files. Create with something like: files <- list.files(path = "./data/table/tiwi_cat_gps_raw_spot", full.names = FALSE, recursive = FALSE, pattern = NULL); paths <- paste0("./data/table/tiwi_cat_gps_raw_spot/", files)}
 
-\item{names}{optional character vector of ID names to replace names in SPOT files with}
+\item{names}{optional character vector of ID names to replace names in SPOT files with. Otherwise the list elements get the name of the sheet. Has to be in order.}
 
 \item{tz}{local timezone to display POSIXct timestamp in. default is ACST}
 
@@ -24,10 +24,11 @@ spot_multi_to_dt(
 \item{skip}{number of lines from top of sheet to skip. Default is 5}
 }
 \value{
-a data.table object
+a list of data.table objects, where each element of the list is a set of GPS data.
 }
 \description{
 author: Ned Ryan-Schofield
 date: 27/02/2026
-Helper function for converting SPOT GPS files downloaded as .xlsx into data.table's. Output is a list of data.table objects excel dates are stored as serial dates, from the origin 1899-12-30 in whatever timezone the sheet was downloaded in. I.e. for the SPOT sheets, this is +9:30. You just have to be careful in future to make sure you know what timezone the data is actually in when it is stored in excel, because that information is not actually stored.
+Helper function for converting SPOT GPS files downloaded as .xlsx into data.table's. Output is a list of data.table objects.
+Excel dates are stored as serial dates, from the origin 1899-12-30 in whatever timezone the sheet was downloaded in. I.e. for the SPOT sheets, this is +9:30. You just have to be careful in future to make sure you know what timezone the data is actually in when it is stored in excel, because that information is not actually stored. Super annoying for working across timezones.
 }

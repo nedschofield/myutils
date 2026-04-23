@@ -9,12 +9,12 @@ dt_has_no_empty_points(dt, x_col = "long", y_col = "lat")
 \arguments{
 \item{dt}{a list of data.tables of GPS data}
 
-\item{x_col}{name of the x coordinate vector, should be numeric}
+\item{x_col}{name of the x coordinate vector, should be numeric. Default is "long"}
 
-\item{y_col}{name of the y coordinate vector, should be numeric}
+\item{y_col}{name of the y coordinate vector, should be numeric. Default is "lat"}
 }
 \value{
-a list of TRUE or FALSE values
+outputs a TRUE/FALSE value in the console, for every element of dt. if FALSE, gives the index for the first NA
 }
 \description{
 author: Ned Ryan-Schofield

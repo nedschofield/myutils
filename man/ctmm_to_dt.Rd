@@ -23,5 +23,5 @@ a list of data.table objects
 \description{
 author: Ned Ryan-Schofield
 date: 03/03/2026
-Helper function for coercing a list of data.table objects (that are gps data derived using spot_to_DT function), to ctmm telemetry objects, for easy removal of outliers
+Helper function for coercing a ctmm telemetry object back to a list of data.tables, after outlier removal.
 }
