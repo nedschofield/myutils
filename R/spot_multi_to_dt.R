@@ -91,6 +91,9 @@ spot_multi_to_dt <- function(paths,
     names(gps.data) <- names
   }
 
+  #sort list alphabetically, to align with ctmm
+  gps.data <- gps.data[order(names(gps.data))]
+
   return(gps.data)
 
 }
