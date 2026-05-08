@@ -19,5 +19,10 @@ Useful links:
 \author{
 \strong{Maintainer}: Ned Ryan-Schofield \email{ned.ryan-schofield@cdu.edu.au}
 
+Authors:
+\itemize{
+  \item Ned Ryan-Schofield \email{ned.ryan-schofield@cdu.edu.au}
+}
+
 }
 \keyword{internal}
