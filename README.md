@@ -39,4 +39,4 @@ dt_to_movebank_tab(
 ```
 
 ## Spatial tools
-tba
+Some functions for downloading MODIS fractional cover data from NCI Thredds database. Made for Chestnut-breasted Whiteface project. WIP
